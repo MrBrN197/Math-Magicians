@@ -18,7 +18,7 @@ class App extends react.Component {
     return (
       <Calculator
         updateDetails={this.updateDetails}
-        value={this.state.next || this.state.total}
+        value={parseInt(this.state.next || this.state.total, 10)}
       />
     );
   }
