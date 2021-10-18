@@ -13,7 +13,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ```
-git clone https://github.com/MrBrN197/Leaderboard.git
+git clone https://github.com/MrBrN197/Math-Magicians.git
 ```
 
 and then run
@@ -25,7 +25,7 @@ npm start
 
 ## Installation
 
-to build a production version to `dist` folder run
+to build a production version to `bulid` folder run
 
 ```
 npm run build
