@@ -13,7 +13,7 @@ class Calculator extends React.Component {
     return (
       <div className="container">
         <div className="screen">
-          {value}
+          {value || 0}
         </div>
         <div className="buttons">
           <button onClick={updateDetails} type="button">AC</button>
