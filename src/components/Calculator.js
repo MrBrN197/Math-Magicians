@@ -10,16 +10,13 @@ class Calculator extends React.Component {
   }
 
   handleClick(e) {
-    console.log('click:', e.target.textContent);
     const newObj = calculate(this.state, e.target.textContent);
     this.setState(newObj);
   }
 
   render() {
-    console.log('state:', this.state);
     const { total } = this.state;
     const { next } = this.state;
-    // const { operation } = this.state;
     return (
       <div className="container">
         <div className="screen">
