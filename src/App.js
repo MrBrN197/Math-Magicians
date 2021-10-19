@@ -16,11 +16,12 @@ class App extends react.Component {
 
   render() {
     const { next, operation, total } = this.state;
+    const op = operation === '%' ? 'mod' : operation;
     let result = '';
     if (total) {
-      result = `${total} ${operation || ''} ${next || ''}`;
+      result = `${total} ${op || ''} ${next || ''}`;
     } else if (next) {
-      result = `${next} ${operation || ''}`;
+      result = `${next} ${op || ''}`;
     }
 
     return (
