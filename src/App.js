@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Calculator from './components/Calculator';
 import calculate from './logic/calculate';
 
-function App() {
+const App = () => {
   const [state, setState] = useState({ total: null, next: null, operation: null });
   const updateDetails = (e) => {
     const newObj = calculate(state, e.target.textContent);
@@ -24,6 +24,6 @@ function App() {
       value={result}
     />
   );
-}
+};
 
 export default App;
