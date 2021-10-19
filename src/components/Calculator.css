@@ -46,7 +46,7 @@ button.orange:hover {
 
 .buttons .double {
   grid-column: span 2;
-  width: 100%;
+  width: unset;
 }
 
 .buttons .orange {
