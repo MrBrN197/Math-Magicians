@@ -43,7 +43,7 @@ class Calculator extends React.Component {
 
 Calculator.propTypes = {
   updateDetails: PropTypes.func.isRequired,
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default Calculator;

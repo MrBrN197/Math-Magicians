@@ -5,7 +5,7 @@ import calculate from './logic/calculate';
 class App extends react.Component {
   constructor(props) {
     super(props);
-    this.state = { total: 0, next: null, operation: null };
+    this.state = { total: null, next: null, operation: null };
     this.updateDetails = this.updateDetails.bind(this);
   }
 
@@ -15,10 +15,18 @@ class App extends react.Component {
   }
 
   render() {
+    const { next, operation, total } = this.state;
+    let result = '';
+    if (total) {
+      result = `${total} ${operation || ''} ${next || ''}`;
+    } else if (next) {
+      result = `${next} ${operation || ''}`;
+    }
+
     return (
       <Calculator
         updateDetails={this.updateDetails}
-        value={parseFloat(this.state.next || this.state.total, 10)}
+        value={result}
       />
     );
   }
