@@ -2,8 +2,7 @@ import React from 'react';
 import './Calculator.css';
 import PropTypes from 'prop-types';
 
-function Calculator(props) {
-  const { updateDetails, value } = props;
+function Calculator({ updateDetails, value }) {
   return (
     <div className="container">
       <div className="screen">
