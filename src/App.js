@@ -1,7 +1,11 @@
 import Calculator from './components/Calculator';
+import Header from './components/Header';
 
 const App = () => (
-  <Calculator />
+  <>
+    <Header />
+    <Calculator />
+  </>
 );
 
 export default App;
