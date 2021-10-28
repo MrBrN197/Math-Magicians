@@ -1,5 +1,5 @@
 import { Switch, Route } from 'react-router-dom';
-import Calculator from './pages/Calculator';
+import CalculatorPage from './pages/CalculatorPage';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Quote from './pages/Quote';
@@ -12,7 +12,7 @@ const App = () => (
         <Home />
       </Route>
       <Route path="/calculator">
-        <Calculator />
+        <CalculatorPage />
       </Route>
       <Route path="/quote">
         <Quote />
