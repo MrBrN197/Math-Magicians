@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+import styles from './Header.module.css';
 
 const Header = () => (
-  <header>
+  <header className={styles.header}>
     <h1>Math Magicians</h1>
     <nav>
       <ul>
