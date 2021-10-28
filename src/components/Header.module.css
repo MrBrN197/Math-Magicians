@@ -25,6 +25,7 @@
 
 .header a:hover {
   border-bottom: 2px solid orangered;
+  background-color: rgba(207, 64, 64, 0.05);
 }
 
 .header a:active {

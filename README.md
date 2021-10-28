@@ -1,12 +1,15 @@
 # Math Magicians
 
-> Math Magicians
-
----
+> "Math magicians": It is a Single Page App (SPA) that allows users to make simple calculations
 
 ## Built With
 
 - ReactJS
+- React Router
+
+## 🔗 [Live Link](https://mrbrn197.github.io/Math-Magicians)
+
+[![](./preview.png)](https://mrbrn197.github.io/Math-Magicians)
 
 ## Getting Started
 
@@ -14,12 +17,13 @@ To get a local copy up and running follow these simple example steps.
 
 ```
 git clone https://github.com/MrBrN197/Math-Magicians.git
+cd Math-Magicians
+npm install
 ```
 
-and then run
+and then to start a live server run
 
 ```
-npm i
 npm start
 ```
 
@@ -48,5 +52,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
