@@ -2,6 +2,8 @@
 .container {
   width: fit-content;
   font-size: 1rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
 }
 
 .screen {

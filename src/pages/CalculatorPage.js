@@ -4,6 +4,8 @@ const style = {
   display: 'flex',
   justifyContent: 'space-around',
   marginTop: '5rem',
+  alignItems: 'flex-start',
+  flexWrap: 'wrap',
 };
 
 const CalculatorPage = () => (

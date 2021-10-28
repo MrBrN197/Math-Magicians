@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import styles from './Quote.module.css';
 
 const Quote = () => {
-  const [state, setState] = useState({});
+  const [state, setState] = useState(null);
 
   useEffect(() => {
     const fetchQuote = async () => {
@@ -10,13 +11,29 @@ const Quote = () => {
       setState(data);
     };
     fetchQuote();
-    setTimeout(fetchQuote, 8000);
+    const it = setInterval(fetchQuote, 8000);
+    return () => {
+      clearInterval(it);
+    };
   }, []);
 
   return (
-    <div>
-      <h2>{state.author}</h2>
-      <div>{state.quote}</div>
+    <div className={styles.quoteBox}>
+      { state
+        ? (
+          <div>
+            <p className={styles.quote}>
+              &quot;
+              {state.quote}
+              &quot;
+            </p>
+            <p className={styles.author}>
+              {'- '}
+              {state.author}
+            </p>
+          </div>
+        )
+        : <p>Loading</p>}
     </div>
   );
 };
