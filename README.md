@@ -7,7 +7,13 @@
 - ReactJS
 - React Router
 
-## 🔗 [Live Link](https://mrbrn197.github.io/Math-Magicians)
+## Live Links
+
+🔗 [Heroku](https://math-magicians-mrbrn197.herokuapp.com/)
+
+🔗 [Netlify](https://mrbrn197-math-magicians.netlify.app/)
+
+🔗 [Github Pages](https://mrbrn197.github.io/Math-Magicians/)
 
 [![](./preview.png)](https://mrbrn197.github.io/Math-Magicians)
 
